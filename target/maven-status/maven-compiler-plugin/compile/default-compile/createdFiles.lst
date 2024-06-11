@@ -1,0 +1,8 @@
+ldc1/tpprogramacionjpa/logica/Alumno_.class
+ldc1/tpprogramacionjpa/peristencia/ControladoraPersistencia.class
+ldc1/tpprogramacionjpa/peristencia/exceptions/PreexistingEntityException.class
+ldc1/tpprogramacionjpa/logica/Alumno.class
+ldc1/tpprogramacionjpa/TPProgramacionJPA.class
+ldc1/tpprogramacionjpa/peristencia/AlumnoJpaController.class
+ldc1/tpprogramacionjpa/peristencia/exceptions/IllegalOrphanException.class
+ldc1/tpprogramacionjpa/peristencia/exceptions/NonexistentEntityException.class
