@@ -28,7 +28,7 @@ public class DoctorJpaController implements Serializable {
     }
     
     public DoctorJpaController(){
-        emf = Persistence.createEntityManagerFactory("pruebaJPAPU");
+        emf = Persistence.createEntityManagerFactory("prueba-JPA-PU");
     }
     private EntityManagerFactory emf = null;
 

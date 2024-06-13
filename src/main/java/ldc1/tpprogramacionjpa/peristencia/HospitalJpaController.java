@@ -27,7 +27,7 @@ public class HospitalJpaController implements Serializable {
     }
     
      public HospitalJpaController(){
-        emf = Persistence.createEntityManagerFactory("pruebaJPAPU");
+        emf = Persistence.createEntityManagerFactory("prueba-JPA-PU");
     }
     private EntityManagerFactory emf = null;
 

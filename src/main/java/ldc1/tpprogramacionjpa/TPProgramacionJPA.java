@@ -32,22 +32,23 @@ public class TPProgramacionJPA {
         listaTotalPacientes.add(p1);
         listaTotalPacientes.add(p2);
         listaTotalPacientes.add(p3);
-
+/*
         //    public Doctor(int codigo, String especialidad, ArrayList<Paciente> pacientes, int dni, String nombre) {
         Doctor d1 = new Doctor(12, "Clinica", listaTotalPacientes,12546897,"Pedro Gomez");
         controladoraLogica.crearDoctor(d1);
+        listaTotalDoctores.add(d1);
 
         //    public Hospital(int id, String nombre, ArrayList<Doctor> doctores, ArrayList<Paciente> pacientes) {
 
         Hospital hospital = new Hospital(5, "Hospital General", listaTotalDoctores, listaTotalPacientes);
         
         controladoraLogica.crearHospital(hospital);
-        
+        */
         System.out.println("--------Pacientes---------");
         ArrayList<Paciente> paciente = controladoraLogica.traerListaPacientes();
         //System.out.println("Paciente "+paciente.getNombre()+ " - Fecha internación: "+paciente.getFechaDeInternacion());
-        System.out.println("--------Doctores---------");
-        ArrayList<Doctor> doctores = controladoraLogica.traerListaDoctores();
+        //System.out.println("--------Doctores---------");
+        //ArrayList<Doctor> doctores = controladoraLogica.traerListaDoctores();
         
         
         
