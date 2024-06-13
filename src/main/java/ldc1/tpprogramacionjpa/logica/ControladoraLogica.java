@@ -6,16 +6,18 @@ public class ControladoraLogica {
     
     ControladoraPersistencia controladoraPersistencia = new ControladoraPersistencia();
     
-    public void crearAlumno(Alumno alumno) {
-        controladoraPersistencia.crearAlumno(alumno);
-    }
+    // CRUD Alumno
+//    public void crearAlumno(Alumno alumno) {
+//        controladoraPersistencia.crearAlumno(alumno);
+//    }
+//    public void eliminarAlumno(int id) {
+//        controladoraPersistencia.eliminarAlumno(id);
+//    }
+//    public void editarAlumno(Alumno alumno) {
+//        controladoraPersistencia.editarAlumno(alumno);
+//    }
     
-    public void eliminarAlumno(int id) {
-        controladoraPersistencia.eliminarAlumno(id);
-    }
     
-    public void editarAlumno(Alumno alumno) {
-        controladoraPersistencia.editarAlumno(alumno);
-    }
+    // CRUD Hospital
     
 }
