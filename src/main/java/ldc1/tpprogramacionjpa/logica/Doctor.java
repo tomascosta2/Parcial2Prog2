@@ -2,6 +2,10 @@ package ldc1.tpprogramacionjpa.logica;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -9,12 +13,20 @@ import java.util.ArrayList;
 @Entity
 public class Doctor extends Persona implements Serializable {
     
+    
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+
+    private int id;
     @Basic
     private int codigo;
     private String especialidad;
     
     @OneToMany
     private ArrayList<Paciente> pacientes;
+    
+    @ManyToOne
+    private Hospital hospital;
 
     public Doctor() {
     }

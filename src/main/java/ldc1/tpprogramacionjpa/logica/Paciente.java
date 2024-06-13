@@ -2,16 +2,26 @@ package ldc1.tpprogramacionjpa.logica;
 
 import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 public class Paciente extends Persona implements Serializable {
     
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
     @Basic
     private int codigo;
     private Date fechaDeInternacion;
 
+    @ManyToOne
+    private Hospital hospital;
+    
     public Paciente() {
     }
 

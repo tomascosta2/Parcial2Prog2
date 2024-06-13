@@ -23,7 +23,7 @@ public class Hospital implements Serializable {
     @Basic
     private String nombre;
     
-    @OneToMany
+    @OneToMany (mappedBy="hospital")
     private ArrayList<Doctor> doctores;
     private ArrayList<Paciente> pacientes;
 

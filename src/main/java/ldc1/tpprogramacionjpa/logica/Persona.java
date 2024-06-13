@@ -3,9 +3,13 @@ package ldc1.tpprogramacionjpa.logica;
 import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.Inheritance;
+import jakarta.persistence.InheritanceType;
 import java.io.Serializable;
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+
 public class Persona implements Serializable {
     
     @Id
