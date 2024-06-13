@@ -11,9 +11,9 @@ import java.util.Date;
 
 @Entity
 public class Paciente extends Persona implements Serializable {
-    
+    /*
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.AUTO)*/
     private int id;
     @Basic
     private int codigo;

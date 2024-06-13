@@ -13,9 +13,9 @@ import java.util.ArrayList;
 @Entity
 public class Doctor extends Persona implements Serializable {
     
-    
+    /*
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.AUTO)*/
 
     private int id;
     @Basic
