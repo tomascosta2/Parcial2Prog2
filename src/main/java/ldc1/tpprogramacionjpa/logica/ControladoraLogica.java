@@ -7,18 +7,7 @@ public class ControladoraLogica {
     
     ControladoraPersistencia controladoraPersistencia = new ControladoraPersistencia();
     
-    // CRUD Alumno 1
-//    public void crearAlumno(Alumno alumno) {
-//        controladoraPersistencia.crearAlumno(alumno);
-//    }
-//    public void eliminarAlumno(int id) {
-//        controladoraPersistencia.eliminarAlumno(id);
-//    }
-//    public void editarAlumno(Alumno alumno) {
-//        controladoraPersistencia.editarAlumno(alumno);
-//    }
-    
-    
+  
     // TODO: CRUD Hospital
     public void crearHospital(Hospital hos){
         controladoraPersistencia.crearHospital(hos); // crear método en controladoraPersistencia
@@ -58,6 +47,29 @@ public class ControladoraLogica {
     
     public ArrayList<Paciente> traerListaPacientes(){
         return controladoraPersistencia.traerListaPacientes();
+    }
+    
+    //crud doctor
+    public void crearDoctor(Doctor doc){ 
+        controladoraPersistencia.crearDoctor(doc);
+        
+    }
+    
+    public void eliminarDoctor(int id){
+        controladoraPersistencia.eliminarDoctor(id);
+    }
+    
+    public Doctor traerDoctor(int id){
+        return controladoraPersistencia.traerDoctor(id);
+    }
+    
+    public void editarDoctor(Doctor doc){
+        controladoraPersistencia.editarDoctor(doc);
+    }
+    
+    
+    public ArrayList<Doctor> traerListaDoctores(){
+        return controladoraPersistencia.traerListaDoctores();
     }
     
 }
