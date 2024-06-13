@@ -9,6 +9,7 @@ import jakarta.persistence.EntityManagerFactory;
 import java.io.Serializable;
 import jakarta.persistence.Query;
 import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.Persistence;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import java.util.List;
@@ -24,6 +25,11 @@ public class PacienteJpaController implements Serializable {
 
     public PacienteJpaController(EntityManagerFactory emf) {
         this.emf = emf;
+    }
+    
+        
+     public PacienteJpaController(){
+        emf = Persistence.createEntityManagerFactory("pruebaJPAPU");
     }
     private EntityManagerFactory emf = null;
 
