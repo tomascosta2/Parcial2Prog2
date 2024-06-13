@@ -7,7 +7,7 @@ public class ControladoraLogica {
     
     ControladoraPersistencia controladoraPersistencia = new ControladoraPersistencia();
     
-    // CRUD Alumno
+    // CRUD Alumno 1
 //    public void crearAlumno(Alumno alumno) {
 //        controladoraPersistencia.crearAlumno(alumno);
 //    }
