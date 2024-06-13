@@ -2,7 +2,10 @@
 <persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd">
   <persistence-unit name="prueba-JPA-PU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>ldc1.tpprogramacionjpa.logica.Alumno</class>
+    <class>ldc1.tpprogramacionjpa.logica.Doctor</class>
+    <class>ldc1.tpprogramacionjpa.logica.Hospital</class>
+    <class>ldc1.tpprogramacionjpa.logica.Paciente</class>
+    <class>ldc1.tpprogramacionjpa.logica.Persona</class>
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/pruebajpa?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
